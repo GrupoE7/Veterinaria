@@ -92,7 +92,7 @@ ul {
 nav ul li {
   font-size: 150%;
   display: inline-block;
-  float: left;
+  
   padding: 10px;
 }
 
@@ -169,39 +169,27 @@ a:hover {
 }
 /* Sección Cuidado_e_higiene */
 .Cuidado_e_higiene {
-  width: 10%;
+  width: 40%;
   /* float: left; */
   padding: 10px;
   text-align: center;
   display: inline-block;
 }
-/*cuidado letra*/
-.cuidado_letra{
-  text-align: center;
-  color: #4472d6;
-  text-decoration-color: rgb(47, 89, 204);
-  font-size: 40px;
-  font-style: oblique;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-
 /* Contenedor Imagenes Noticias*/
-.Cuidado_e_higiene {
+.icon-notice {
   margin: 0 auto;
   width: 200px;
   height: auto;
-  border: 0px solid #ffff;
+  border: 2px solid #ffff;
   text-align: center;
   margin-top: 3%;
 }
 
 /* Imagenes Noticias*/
-.Cuidado_e_higiene img {
+.icon-notice img {
   margin: 0 auto;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: auto;
 }
 
 /* Sección Equipo */
@@ -253,7 +241,7 @@ footer {
   float: left;
   width: 60%;
   padding: 4% 4% 2% 0;
-  font-size: 
+  font-size: 4px;
 }
 
 .footer-nav {
@@ -289,4 +277,3 @@ footer {
 .social i:hover {
   color: #adf506;
 }
-

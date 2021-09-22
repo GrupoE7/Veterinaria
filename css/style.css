@@ -161,6 +161,12 @@ a:hover {
   width: 350px;
   height: auto;
 }
+.Noticias {
+  width: 48%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
 
 /* Contenedor Seccion Noticias */
 .cont-notices {
@@ -223,9 +229,16 @@ a:hover {
 
 /* Sección Footer */
 footer {
-  background: #000000;
+  background: rgba(45, 165, 155, 0.733);
   width: 100%;
-  overflow: auto;
+  float: left;
+ 
+  text-align: left;
+}
+.seccion-1,.seccion-2
+{
+    width: auto;
+    height: 50%;
 }
 .icon-text {
   width: 100%;
@@ -241,7 +254,7 @@ footer {
   float: left;
   width: 60%;
   padding: 4% 4% 2% 0;
-  font-size: ;
+  
 }
 
 .footer-nav {
@@ -249,9 +262,9 @@ footer {
 }
 
 .footer-nav a {
-  font-size: 160%;
+  font-size: 10%;
   color: #b8ec3d;
-  font-weight: 300;
+  
 }
 
 .footer-nav a:hover {

@@ -184,7 +184,7 @@ a:hover {
 /* Contenedor Imagenes Noticias*/
 .icon-notice {
   margin: 0 auto;
-  width: 200px;
+  width: 220px;
   height: auto;
   border: 2px solid #ffff;
   text-align: center;
@@ -194,7 +194,7 @@ a:hover {
 /* Imagenes Noticias*/
 .icon-notice img {
   margin: 0 auto;
-  width: 250px;
+  width: 200px;
   height: auto;
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="hpage">
+  <div class="home">
     
     <HomePage msg="Welcome to Your Vue.js App"/>
   </div>
@@ -7,14 +7,12 @@
 
 <script>
 // @ is an alias to /src
-
-import HomePage from '../components/HomePage.vue'
+import HomePage from '@/components/HomePage.vue'
 
 export default {
-  name: 'Homepage',
+  name: 'Home',
   components: {
     HomePage
   }
 }
-
 </script>

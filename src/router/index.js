@@ -1,11 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Home from '../views/Home.vue';
+
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: "/portafolio",
     name: "home",
     component: () => import("../components/CreateComponent"),
   },
@@ -15,9 +22,25 @@ const routes = [
     component: () => import("../components/ListComponent"),
   },
   {
-    path: "/edit/:id",
+    path: "edit/:id",
     name: "edit",
     component: () => import("../components/EditComponent"),
+  },
+  {
+    path: '/conocenos',
+    name: 'Conocenos',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Conocenos.vue')
+  },
+  {
+    path: '/servicios',
+    name: 'Servicios',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/Servicios.vue')
   },
 ];
 

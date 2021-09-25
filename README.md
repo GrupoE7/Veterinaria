@@ -22,7 +22,7 @@ Get inside the project
 
 Start the vue app on http://localhost:8080
 
-#### npm run serve
+#### npm run serve ##
 
 Get inside the Node server folder:
 cd backend = BACKEND

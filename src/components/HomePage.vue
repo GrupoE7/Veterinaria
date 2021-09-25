@@ -122,7 +122,7 @@
 
 <script>
 export default {
-  name: 'Homepage',
+  name: 'Home',
   props: {
     msg: String
   }
@@ -152,3 +152,4 @@ body {
   opacity: 100%;
 }
 </style>
+

@@ -12,13 +12,13 @@ const routes = [
     component: Home
   },
   {
-    path: "/portafolio",
-    name: "home",
+    path: "/view",
+    name: "view",
     component: () => import("../components/CreateComponent"),
   },
   {
-    path: "/view",
-    name: "view",
+    path: "/portafolio",
+    name: "home",
     component: () => import("../components/ListComponent"),
   },
   {

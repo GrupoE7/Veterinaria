@@ -1,4 +1,7 @@
 <template>
+<div class="portafolio">
+
+
   <div>
     <!-- Nav bar -->
     <nav
@@ -23,5 +26,6 @@
     <div class="container mt-5">
       <router-view></router-view>
     </div>
+  </div>
   </div>
 </template>

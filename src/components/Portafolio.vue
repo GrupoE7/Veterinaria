@@ -47,8 +47,7 @@
             <th>Valor</th>
             <th>Foto</th>
           </tr>  -->
-        </thead>
-        
+        </thead>        
         <tbody class="ver">
           <tr class="ver2" v-for="student in Students" :key="student._id">
             <td class="nota1">{{ student.name }}</td>

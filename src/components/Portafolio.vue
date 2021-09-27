@@ -1,13 +1,6 @@
 <template>
-
-
-
-
   <div class="row">
-    
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">PETCARE</a>
     <img alt="Vue logo" src="../assets/Logo_PetCare_PN.png">
@@ -45,19 +38,9 @@
     </div>
   </div>
 </nav>
-
-
-    
     <div class="col-md-12">
       <table class="table table-striped">
         <thead class="thead-dark">
-          
-
-
-
-
-   
-          
            <!-- <tr class="recuadro">
             <th>elemento</th>
             <th>descripccion</th>

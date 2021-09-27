@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
+      <img class="logo" alt="Vue logo" src="./assets/Logo_PetCare_PN.png">
+      <br>
       <router-link to="/">Inicio</router-link> |
       <router-link to="/servicios">Servicios</router-link>|
       <router-link to="/conocenos">Conócenos</router-link>|
@@ -32,5 +34,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.logo{
+  height: 50px;
 }
 </style>

@@ -12,9 +12,19 @@ const routes = [
     component: Home
   },
   {
-    path: "/portafolio",
-    name: "home",
+    path: "/Portafolio",
+    name: "Portafolio",
+    component: () => import("../components/Portafolio"),
+  },
+  {
+    path: "/agregar",
+    name: "agregar",
     component: () => import("../components/CreateComponent"),
+  },
+  {
+    path: "/Login",
+    name: "Login",
+    component: () => import("../components/Login"),
   },
   {
     path: "/view",
@@ -22,7 +32,7 @@ const routes = [
     component: () => import("../components/ListComponent"),
   },
   {
-    path: "edit/:id",
+    path: "/edit/:id",
     name: "edit",
     component: () => import("../components/EditComponent"),
   },

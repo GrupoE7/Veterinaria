@@ -1,10 +1,13 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-md-6">
-      <h3 class="text-center">Create Student</h3>
+      <h3 class="text-center">Creaar producto</h3>
       <form @submit.prevent="handleSubmitForm">
+
         <div class="form-group">
-          <label>Name</label>
+       
+
+          <label>Producto</label>
           <input
             type="text"
             class="form-control"
@@ -13,25 +16,32 @@
           />
         </div>
 
-        <div class="form-group">
-          <label>Email</label>
+        <div Descripcion="form-group">
+          <label>Descripcion</label>
           <input
-            type="email"
+            type="text"
             class="form-control"
-            v-model="student.email"
+            v-model="student.Descripcion"
             required
           />
         </div>
 
         <div class="form-group">
-          <label>Phone</label>
+          <label>Valor</label>
           <input
-            type="text"
+            type="number"
             class="form-control"
-            v-model="student.phone"
+            v-model="student.Precio"
             required
           />
         </div>
+
+
+        <form action="/upload"  method="POST" enctype="multipart/form-data">
+
+          <input type="file" name="imagen">
+          <button type="subnit">subir</button>
+        </form>
 
         <div class="form-group">
           <button class="btn btn-danger btn-block">Create</button>
@@ -49,8 +59,8 @@ export default {
     return {
       student: {
         name: "",
-        email: "",
-        phone: "",
+        descripcion: "",
+        precio: "",
       },
     };
   },
@@ -64,8 +74,8 @@ export default {
           this.$router.push("/view");
           this.student = {
             name: "",
-            email: "",
-            phone: "",
+            descripcion: "",
+            precio: "",
           };
         })
         .catch((error) => {

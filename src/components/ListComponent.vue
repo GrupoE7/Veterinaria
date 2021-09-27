@@ -4,17 +4,17 @@
       <table class="table table-striped">
         <thead class="thead-dark">
           <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Actions</th>
+            <th>elemento</th>
+            <th>descripccion</th>
+            <th>Valor</th>
+            <th>Accion</th>
           </tr>
         </thead>
         <tbody>
           <tr v-for="student in Students" :key="student._id">
             <td>{{ student.name }}</td>
-            <td>{{ student.email }}</td>
-            <td>{{ student.phone }}</td>
+            <td>{{ student.Descripcion }}</td>
+            <td>{{ student.Precio }}</td>
             <td>
               <router-link
                 :to="{ name: 'edit', params: { id: student._id } }"

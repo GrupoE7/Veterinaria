@@ -4,7 +4,9 @@
       <router-link to="/">Inicio</router-link> |
       <router-link to="/servicios">Servicios</router-link>|
       <router-link to="/conocenos">Conócenos</router-link>|
-      <router-link to="/portafolio">Portafolio</router-link>
+      <router-link to="/Portafolio">Portafolio</router-link>
+      <router-link to="/view">view</router-link>
+      <router-link to="/agregar">Agregar</router-link>
     </div>
     <router-view/>
   </div>

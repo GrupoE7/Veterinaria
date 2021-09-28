@@ -4,7 +4,7 @@
       <h3 class="text-center">Update Student</h3>
       <form @submit.prevent="handleUpdateForm">
         <div class="form-group">
-          <label>Name</label>
+          <label>Producto</label>
           <input
             type="text"
             class="form-control"
@@ -14,21 +14,21 @@
         </div>
 
         <div class="form-group">
-          <label>Email</label>
+          <label>Descripcion</label>
           <input
-            type="email"
+            type="String"
             class="form-control"
-            v-model="student.email"
+            v-model="student.Descripcion"
             required
           />
         </div>
 
         <div class="form-group">
-          <label>Phone</label>
+          <label>Precio</label>
           <input
             type="text"
             class="form-control"
-            v-model="student.phone"
+            v-model="student.Precio"
             required
           />
         </div>

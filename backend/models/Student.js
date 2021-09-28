@@ -6,16 +6,20 @@ let studentSchema = new Schema(
     name: {
       type: String,
     },
-    email: {
+    Descripcion: {
       type: String,
     },
-    phone: {
+    Precio: {
       type: Number,
     },
+     foto: {
+      type: String,
+     },
+
   },
   {
-    collection: "students",
+    collection: "Producto",
   }
 );
 
-module.exports = mongoose.model("Student", studentSchema);
+module.exports = mongoose.model("Producto", studentSchema);

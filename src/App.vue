@@ -61,5 +61,7 @@ body {
   padding-bottom: 20px;
 }
 
-
+.logo{
+  height: 50px;
+}
 </style>

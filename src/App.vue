@@ -1,14 +1,35 @@
 <template>
   <div id="app">
     <div id="nav">
-      <img class="logo" alt="Vue logo" src="./assets/Logo_PetCare_PN.png">
-      <br>
-      <router-link to="/">Inicio</router-link> |
-      <router-link to="/servicios">Servicios</router-link>|
-      <router-link to="/conocenos">Conócenos</router-link>|
-      <router-link to="/Portafolio">Portafolio</router-link>
-      <router-link to="/view">view</router-link>
-      <router-link to="/agregar">Agregar</router-link>
+    <nav class="navbar navbar-dark text-white bg-dark " aria-label="First navbar example ">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="">PetCare</a>
+          <li class="nav-item dropdown">
+                <router-link to="/">Inicio</router-link> |
+                <router-link to="/servicios">Servicios</router-link> |
+                <router-link to="/conocenos">Conócenos</router-link> |
+                <router-link to="/portafolio">Portafolio</router-link>
+          </li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExample01">
+        <ul class="navbar-nav me-auto mb-2">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Administradores</a>
+                <ul class="" aria-labelledby="dropdown01">
+                  <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+            <button type="button" class="btn btn-warning">Sign-up</button>
+            
+          </div>
+                             
+                </ul> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
     </div>
     <router-view/>
   </div>
@@ -29,11 +50,15 @@
 
 #nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #51848d;
+  
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #7dc59e;
+}
+body {
+  padding-bottom: 20px;
 }
 
 .logo{

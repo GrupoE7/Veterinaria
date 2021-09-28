@@ -174,7 +174,7 @@ h3 {
   margin: 10px;
   width: 88%;
   text-align:center;
-  height: 210px;
+  height: 250px;
   border-radius: 8%; 
   background-color: rgba(69, 82, 81, 0.301);
   

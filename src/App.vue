@@ -8,9 +8,9 @@
                 <router-link to="/">Inicio</router-link> |
                 <router-link to="/servicios">Servicios</router-link> |
                 <router-link to="/conocenos">Conócenos</router-link> |
-                <router-link to="/portafolio">Portafolio</router-link>
-                <router-link to="/view">ver</router-link>
-                <router-link to="/agregar">modificar</router-link>
+                <router-link to="/portafolio">Portafolio</router-link> |
+                <router-link to="/view">ver</router-link> |
+                <router-link to="/agregar">modificar</router-link> 
           </li>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

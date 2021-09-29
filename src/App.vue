@@ -3,7 +3,7 @@
     <div id="nav">
     <nav class="navbar navbar-dark text-white bg-dark " aria-label="First navbar example ">
     <div class="container-fluid">
-      <a class="navbar-brand text-white" href="">PetCare</a>
+      <a class="navbar-brand text-white" href="/">PetCare</a>
           <li class="nav-item dropdown">
                 <router-link to="/">Inicio</router-link> |
                 <router-link to="/servicios">Servicios</router-link> |

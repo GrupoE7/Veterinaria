@@ -5,12 +5,18 @@ const morgan   = require('morgan')
 const multer   = require('multer')
 const uuid   =    require('uuid/v4')
 const {format} = require('timeago.js')
+const studentAPI = require("./routes/index");
+const cors = require("cors");
+
+
+
 
 
 //setting
 app.set('port', process.env.PORT || 3000)
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
+
 
 
 //mongoose conection
@@ -21,6 +27,7 @@ app.set('view engine', 'ejs')
 app.use(morgan('dev'))
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
+app.use(cors());
 
 
 
@@ -33,7 +40,8 @@ app.use((req, res , next)=> {
 //multer
 const storage = multer.diskStorage({
     destination: function(req, file ,cb){
-       cb(null, path.join(__dirname,'./public/img/upload'))
+       cb(null, path.join(__dirname,'../../public/img/upload'))
+     
     },
     filename: function(req, file , cb){
         cb(null, uuid()+path.extname(file.originalname))
@@ -42,9 +50,11 @@ const storage = multer.diskStorage({
 app.use(multer({storage:storage}).single('image'))
 
 
+
 //routes
 app.use(require('./routes/index.js'))
 
+app.use("/api", studentAPI);
 
 
 //file static

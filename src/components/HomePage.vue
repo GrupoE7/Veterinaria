@@ -1,10 +1,86 @@
 <template>
   <div class="hello">
     <body>
+
+
+
+
+
+
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <center>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/noticia1.png" class="d-block w-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="letra2" id="letra2">Cuidado Animal</h5>
+        <p  class="letra" id="letra">El cuidado emocional de las mascotas es tan importante como la alimentación .</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/noticia2.jpg" class="d-block w-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="letra2" id="letra2">Los gatos</h5>
+        <p class="letra" id="letra">Las enfermedades no se pueden percibir sin revisión especializada .</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/noticia3.jpg" class="d-block w-50" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="letra2" id="letra2">El baño de las mascotas</h5>
+        <p class="letra" id="letra">Una práctica que no se debe hacer muy seguido por que puede enfermarlos  .</p>
+      </div>
+    </div>
+  </div>
+  </center>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <center>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/noticia1.png" class="d-block w-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/noticia2.jpg" class="d-block w-50" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/noticia3.jpg" class="d-block w-50" alt="...">
+    </div>
+  </div>
+  </center>
+</div>
+ -->
+
+
       
-    <div class="icon-wrap">
-                    <img src="../assets/unida.jpg" alt="" />
-                </div>
+      
+    
     <div
       class="slider-area slider-style-2 height-950 bg_image"
       data-black-overlay="2"
@@ -182,4 +258,28 @@ p{
 a{
     color: rgba(226, 111, 149, 0.664);
 }
+.letra{
+  color: rgb(40, 28, 209);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 18px;
+font-style: initial;
+}
+.letra2{
+  color: rgb(61, 160, 41);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 18px;
+font-style: initial;
+}
 </style>
+
+<script>
+
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+  interval: 10,
+  transition:    10,
+      
+  wrap: false
+})
+
+</script>

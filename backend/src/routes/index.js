@@ -6,26 +6,60 @@ const path = require('path')
 const Image = require('../model/image.js')
 
 
-router.get('/', async (req,res,next)=>{
+
+   router.get('/', async (req,res,next)=>{
 
     const image = await Image.find()
     console.log(image)
-    res.render('index', {data:image});
-})
+res.render('index', {data:image});
+  //res.json(Image);
+    
+  })
 
 
-router.get('/ver', async (req,res,next)=>{
+
+ 
+
+
+ router.get('/', async (req,res,next)=>{
 
     const image = await Image.find()
     console.log(image)
-    res.render('ver', {data:image});
-})
+   //res.render('ver', {data:image});
+  res.json(image);
+ })
+
+////////////////////////////////////////
+router.route("/ver").get((req, res) => {
+    Image.find((error, data, next) => {
+      if (error) {
+        return next(error);
+      } else {
+        console.log(error);
+        res.json(data);
+      }
+    });
+  });
+
+///////////////////////////////
 
 
-
+///////////////////////////////////////////
 router.get('/upload', (req,res,next)=>{
     res.render('upload')
 })
+/////////////
+
+
+
+///////////////////////////
+
+
+
+
+
+
+//////////////////////////////
 
 
 router.post('/upload', async (req,res,next)=>{
@@ -36,12 +70,14 @@ router.post('/upload', async (req,res,next)=>{
      image.precio = req.body.precio,
      image.filename = req.file.filename,
      image.originalname = req.file.originalname,
+    //  image.path   = '/img/upload/'+ req.file.filename,
      image.path   = '/img/upload/'+ req.file.filename,
      image.mimetype =req.file.mimetype,
      image.size  = req.file.size
      await image.save()
+     
 
-      res.redirect('/')
+       res.redirect('http://localhost:8080/view')
 })
 
 
@@ -50,20 +86,57 @@ router.post('/upload', async (req,res,next)=>{
 router.get('/images/:id', async (req,res,next)=>{
      
       const id = req.params.id;
-      const image = await Image.findById(id);
-      res.render('profile', {image: image})
+      try{
+
+        // const image=await Image.findById(id);
+        const image=await Image.findById(id);
+        console.log(id);
+        res.json(image);
+        
+      }catch(error){
+        return res.status(500).json({
+          mensaje:'error',
+          
+        })
+
+      }
+
+
+
+
+
+
+      // const image = await Image.findById(id);
+      // res.render('profile', {image: image})
 })
 
 
-router.get('/images/:id/delete', async (req,res,next)=>{
+ router.get('/images/delete/:id', async (req,res,next)=>{
      
-    const id = req.params.id;
-    const imageDeleted = await Image.findByIdAndDelete(id);
+  const id = req.params.id;
+     const imageDeleted = await Image.findByIdAndDelete(id);
    
    await unlink(path.resolve(`./src/public/${imageDeleted.path}`))
 
     res.redirect('/')
-})
+ })
+
+// router.route("/delete-producto/:id").delete((req, res, next) => {
+//   StudentModel.findByIdAndRemove(req.params.id, (error, data) => {
+//     if (error) {
+//       return next(error);
+//     } else {
+//       res.status(200).json({
+//         msg: data,
+//       });
+//     }
+//   });
+// });
+
+
+
+
+
 
 
 module.exports = router

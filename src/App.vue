@@ -9,9 +9,9 @@
                 <router-link to="/servicios">Servicios</router-link> |
                 <router-link to="/conocenos">Conócenos</router-link> |
 
-                <router-link to="/portafolio">Portafolio</router-link>
-                <router-link to="/view">ver</router-link>
-                <router-link to="/agregar">modificar</router-link>
+                <router-link to="/portafolio">Portafolio</router-link> |
+                <router-link to="/view">ver</router-link> |
+                <router-link to="/agregar">modificar</router-link> |
                  <router-link to="/perfil">perfil</router-link>
 
           </li>

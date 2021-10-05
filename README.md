@@ -37,3 +37,4 @@ Start the mongodb server.
 Start node server on http://localhost:4000/api 
 nodemon
 
+npm install @vue/babel-preset-app -dev

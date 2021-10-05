@@ -22,7 +22,7 @@
                 <!-- Contenedor Servicios 1-->
                 <section class="Servicios">
                     <div class="icon-wrap">
-                        <img src="../assets/petshop1aedfgh.jpg" alt="compra accesorios para mascotas" />
+                        <img src="../assets/petshop.jpg" alt="compra accesorios para mascotas" />
                     </div>
                 
                         <h3>Pet Shop</h3>
@@ -56,7 +56,7 @@
            <!-- Contenedor Servicios 3-->
             <section class="Servicios">
                 <div class="icon-wrap">
-                    <img src="../assets/hospital-clinico1asdf.jpg" alt="" />
+                    <img src="../assets/hospital-clinico.jpg" alt="" />
                 </div>
                 <h3>Hospital clínico</h3>
                     <div class="cardscc2">

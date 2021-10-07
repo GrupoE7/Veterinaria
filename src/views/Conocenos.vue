@@ -89,7 +89,7 @@
                   <div class="col-lg-4 col-sm-6 mb-grid-gutter">
                     <div class="d-flex align-items-center"><img class="rounded-circle" src="../assets/Equipo/edward-garcia.jpg" width="150" alt="William Smith">
                       <div class="ps-3">
-                        <h6 class="fs-base pt-1 mb-1">Edward Garciah</h6>
+                        <h6 class="fs-base pt-1 mb-1">Edward Garcia</h6>
                         <p class="fs-ms text-muted mb-0">Financial director</p><a class="nav-link-style fs-ms text-nowrap" href="mailto:w.smith@example.com"><i class="ci-mail me-2"></i>Edward.G@example.com</a>
                       </div>
                     </div>

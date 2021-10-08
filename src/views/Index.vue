@@ -86,9 +86,13 @@
                   <label>Password...</label>
                   <md-input v-model="password"></md-input>
                 </md-field>
-                <md-button slot="footer" class="md-simple md-success md-lg">
+                 <md-button slot="footer" class="md-simple md-success md-lg"  href="#/ListComponent">
                   Get Started
-                </md-button>
+                </md-button> 
+
+ 
+
+
               </login-card>
             </div>
           </div>
@@ -227,8 +231,24 @@ export default {
   beforeDestroy() {
     window.removeEventListener("resize", this.leafActive);
   }
+  
+
+
+
+
+
+
 };
 </script>
+
+
+
+
+
+
+
+
+
 <style lang="scss">
 .section-download {
   .md-button + .md-button {

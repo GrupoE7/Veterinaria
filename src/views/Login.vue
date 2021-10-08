@@ -34,7 +34,7 @@
               <p slot="description" class="description">Or Be Classical</p>
               <md-field class="md-form-group" slot="inputs">
                 <md-icon>face</md-icon>
-                <label>First Name...</label>
+                <label> Name...</label>
                 <md-input v-model="firstname"></md-input>
               </md-field>
               <md-field class="md-form-group" slot="inputs">
@@ -48,9 +48,9 @@
                 <label>Password...</label>
                 <md-input v-model="password"></md-input>
               </md-field>
-              <md-button slot="footer" class="md-simple md-success md-lg">
-                Get Started
-              </md-button>
+              <md-button slot="footer" class="md-simple md-success md-lg"  href="#/ListComponent">
+                  Get Started
+                </md-button> 
             </login-card>
           </div>
         </div>

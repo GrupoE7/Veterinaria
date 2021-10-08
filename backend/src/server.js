@@ -5,7 +5,7 @@ const morgan   = require('morgan')
 const multer   = require('multer')
 const uuid   =    require('uuid/v4')
 const {format} = require('timeago.js')
-const studentAPI = require("./routes/index");
+const studentAPI = require("./routes/student.route");
 const cors = require("cors");
 
 
@@ -55,6 +55,7 @@ app.use(multer({storage:storage}).single('image'))
 app.use(require('./routes/index.js'))
 
 app.use("/api", studentAPI);
+// studentAPI.use("/api", studentAPI);
 
 
 //file static

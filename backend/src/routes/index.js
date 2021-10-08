@@ -77,7 +77,7 @@ router.post('/upload', async (req,res,next)=>{
      await image.save()
      
 
-       res.redirect('http://localhost:8080/view')
+       res.redirect('http://localhost:8080/view#/ListComponent')
 })
 
 

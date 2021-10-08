@@ -6,7 +6,12 @@ import Login from "./views/Login.vue";
 import Profile from "./views/Profile.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
-import axios from 'axios'
+ import CreateComponent from "./components/CreateComponent.vue";
+
+import ListComponent from "./components/ListComponent.vue";
+
+
+
 
 
 Vue.use(Router);
@@ -31,6 +36,32 @@ export default new Router({
         footer: { backgroundColor: "black" }
       }
     },
+
+///////////////////////////////
+
+{
+  path: "/ListComponent",
+  name: "ListComponent",  
+  components: { default: ListComponent, header: MainNavbar, footer: MainFooter },
+  props: {
+    header: { colorOnScroll: 400 },
+    footer: { backgroundColor: "black" }
+  }
+},
+//////////////////////////////////////////////////
+{
+  path: "/CreateComponent",
+     name: "CreateComponent",  
+   components: { default: CreateComponent, header: MainNavbar, footer: MainFooter },
+   props: {
+     header: { colorOnScroll: 400 },
+     footer: { backgroundColor: "black" }
+   }
+ },
+
+
+
+
     {
       path: "/login",
       name: "login",

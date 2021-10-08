@@ -25,59 +25,57 @@
           
 
 <!-- ////////////////////////////////////////////////////////////////////////////// -->
-<div class="row">
-    <div class="col-md-12">
-      <table class="table table-striped">
-        <thead class="thead-dark">
-          <tr>
-            <th >nombre</th>
-            <th>Descripcion</th>
-            <th>Valor</th>
-            <th>Imagen</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr v-for="(item, index) in Students" :key="index">
-            <td class="title" id="title">{{ item.title }}</td>
-            <td class="description" id="description">{{ item.description }}</td>
-            <td class="precio" id="precio">{{ item.precio }}</td>
-             <img :src="item.path"   width="100px" alt="100px" height="100px"> 
-            <!-- 8b477bb1-ff3a-45c5-ab9e-59ef6641496f.jpg -->
-            
-            <!-- <img src="../../backend/src/public/img/upload/8b477bb1-ff3a-45c5-ab9e-59ef6641496f.jpg" alt="imagen">  -->
-            <!-- <img src="../../backend/src/public/img/upload/8b477bb1-ff3a-45c5-ab9e-59ef6641496f.jpg" alt="imagen">  -->
-            
-            <td>
-              <!-- <router-link
-                :to="{ title: 'edit', params: { id: item._id } }"
-                class="btn btn-success"
-                >Edit
-              </router-link> -->
-              
-              <button
-              class="btn btn-outline-warning"
-               value="Reload Page" onclick="history.go(0)"
-                @click.prevent="deleteProducto(item._id)"
-                
-              >
-                Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-<!-- /////////////////////////////////////////////////////////////////////////////////// -->
 <center>
+<div class="conatiner mt-5" id="contiene">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card">
+                    <div class="card-header text-white bg-success" id="header">
+                     <h5 class="product" id="product">Crear Producto</h5>
+                    </div>
+                    <div class="card-body">
+                       
+                        <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+                            <div class="input-group mb-3">
+                                    <div class="custom-file">
+                                        <input type="file" name="image" class="custom-file-input" id="inputGroupFile02">
+                                     <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">....</label>
+                                    </div>
+                                </div>
 
-                 <md-button  slot="footer" class="btn btn-outline-success"  href="#/CreateComponent">
-                  Crear 
+                            <div class="form-group">
+                              <input type="text" name="title" class="form-control" placeholder="Nombre">
+                            </div>
 
-                </md-button > 
-</center>
-    
+
+                            <div class="form-group">
+                                <textarea name="description" class="form-control" rows="2" placeholder="description"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="precio" class="form-control" rows="2" placeholder="precio"></textarea>
+                            </div>
+
+                            <button type="submit"  >Subir</button>
+                            <br>
+                            <br>
+                            <br>
+                       </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </center>
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+      
+        
      
    
       <div class="section section-contacts">
@@ -192,58 +190,21 @@ export default {
 
 
 <style lang="scss" scoped>
-.md-card-actions.text-center {
-  display: flex;
-  justify-content: center !important;
-}
-.contact-form {
-  margin-top: 30px;
-}
-
-.md-has-textarea + .md-layout {
-  margin-top: 15px;
-}
-.card-body{
-
-
-  margin-top: 50px;
-  height: 128px;
-  background: linear-gradient(-98dg,#BF819f ,#f28a57);
-}
-
-
-
-
-
-
-
-.btn-success {
-  margin-right: 10px;
-}     
-
-
-.external-link {
-    cursor: pointer;
-    color: blue
-}
-
-
-
-
-
-
-
-
-
 
 
 /////////////////////////////////////@at-root
-.card-body{
 
 
-  margin-top: 50px;
-  height: 128px;
-  background: linear-gradient(-98dg,#BF819f ,#f28a57);
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0, 0, 0, 0.125); */
+    border-radius: 0.25rem;
 }
 
 
@@ -254,9 +215,6 @@ export default {
 
 
 
-.title{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 
 </style>

@@ -9,7 +9,7 @@
         
             <div class="p-info px-3 py-3">
                 <div>
-                    <h5 class="mb-0">{{ item.title }}</h5> <span> {{ item.created_at}} </span>
+                    <h5 class="mb-0">{{ item.title }}</h5> <span> </span>
                 </div>
                 <div class="p-price d-flex flex-row"> <span>$</span>
                     <h1>{{ item.precio }}</h1>
@@ -17,14 +17,12 @@
                 <div class="heart"> <i class="bx bx-heart"></i> </div>
             </div>
             <div class="text-center p-image"> 
-              <br>
-              <br>
-              <br>
+              
               <img :src="item.path"> </div>
             <div class="p-about">
                 <p>{{ item.description }}</p>
             </div>
-            <div class="buttons d-flex flex-row gap-3 px-3"> <button class="btn btn-danger w-100">View</button> <button class="btn btn-outline-danger w-100">Buy Now</button> </div>
+            <div class="buttons d-flex flex-row gap-3 px-3"> <button class="btn btn-danger w-100">Ver</button> <button class="btn btn-outline-danger w-100">Comprar ahora</button> </div>
         </div>
     </div>
     </tr>
@@ -34,7 +32,7 @@
 </template>
 
 
-// <script>
+<script>
 import axios from "axios";
 
  export default {

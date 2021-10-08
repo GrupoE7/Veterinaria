@@ -7,6 +7,72 @@ const uuid   =    require('uuid/v4')
 const {format} = require('timeago.js')
 const studentAPI = require("./routes/index");
 const cors = require("cors");
+//////////////////////////////
+///////login/////////
+const bodyParser  = require('body-parser');
+const bcrypt = require ('bcrypt');
+const User = require('./model/user');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(express.static(path.join(__dirname,'public')));
+
+
+
+app.post('/register', function(req,res) {
+    const {username , password } = req.body;
+    
+    const user = new User({username,password});
+    
+    user.save( err =>{
+        if (err){
+            res.status(500).send('error al ingresar usuario ');
+        }
+        else{
+            res.status(200).send('usuario registrado');
+        }
+    });
+    
+    
+    });
+    
+    app.post('/autenticate', function(req,res) {
+        const {username , password } = req.body;
+    
+        User.findOne({username},(err,user)=>{
+            if(err){
+                res.status(500).send('error a validar usuario ');
+            }
+            else if(!user){
+                res.status(500).send('usuario no existe ');
+                
+            }else{
+                user.isCorrectPasswoord(password,(err,result)=>{
+                    if (err){
+                        res.status(500).send('error al autenticar ');
+                    }else if(result){
+                        // res.status(200).send('usuario autenticado correctamenet ');
+                        res.redirect('http://localhost:8080/view#/ListComponent');
+    
+                    }else{
+                        // res.status(500).send('usuario y o contraseña incorrecta ');
+
+                        res.redirect('http://localhost:8080/view#/');
+                        
+                    }
+    
+    
+                })
+            }
+    
+        })
+    
+    });
+
+
+
+///////////////////////////////////
+
 
 
 

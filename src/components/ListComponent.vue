@@ -73,9 +73,15 @@
 <center>
 
                  <md-button  slot="footer" class="btn btn-outline-success"  href="#/CreateComponent">
-                  Crear 
+                  Crear producto
 
                 </md-button > 
+                <br>
+                <br>
+                  <md-button  slot="footer" class="btn btn-outline-success"  href="#/crearusuario">
+                  Crear usuario
+
+                </md-button >
 </center>
     
      

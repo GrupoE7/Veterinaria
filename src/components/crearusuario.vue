@@ -9,12 +9,12 @@
           >
           <!-- ////////////////////////////////////////////////////////////////// -->
 
-<form action="http://localhost:3000/autenticate" method="POST">
+<form action="http://localhost:3000/register" method="POST">
 
 
           
             <login-card header-color="green">
-              <h4 slot="title" class="card-title">Ingresar</h4>
+              <h4 slot="title" class="card-title">Crear Usuario</h4>
               <md-button
                 slot="buttons"
                 href="javascript:void(0)"

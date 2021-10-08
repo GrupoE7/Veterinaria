@@ -7,6 +7,8 @@ import Profile from "./views/Profile.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
 import MainFooter from "./layout/MainFooter.vue";
  import CreateComponent from "./components/CreateComponent.vue";
+ 
+ import crearusuario from "./components/crearusuario.vue";
 
 import ListComponent from "./components/ListComponent.vue";
 
@@ -58,8 +60,18 @@ export default new Router({
      footer: { backgroundColor: "black" }
    }
  },
+ /////////////////////////////////////////////////
 
-
+///////////////////////////////////////////////////////////
+{
+  path: "/crearusuario",
+     name: "crearusuario",  
+   components: { default: crearusuario, header: MainNavbar, footer: MainFooter },
+   props: {
+     header: { colorOnScroll: 400 },
+     footer: { backgroundColor: "black" }
+   }
+ },
 
 
     {

@@ -47,6 +47,35 @@
 
 
 <script>
+export default {
+  bodyClass: "landing-page",
+  props: {
+    header: {
+      type: String,
+      default: require("../assets/img/examples/fondServicios.jpg")
+    },
+    teamImg1: {
+      type: String,
+      default: require("../assets/img/faces/Jennifer.jpeg")
+    },
+    teamImg2: {
+      type: String,
+      default: require("../assets/img/faces/Anderson.jpeg")
+    },
+    teamImg3: {
+      type: String,
+      default: require("../assets/img/faces/edward-garcia.jpg")
+    }
+  },
+ 
+  computed: {
+    headerStyle() {
+      return {
+        backgroundImage: `url(${this.header})`
+      };
+    }
+  }
+};
 import axios from "axios";
 
  export default {

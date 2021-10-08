@@ -18,10 +18,16 @@ const routes = [
     component: () => import("../components/Portafolio"),
   },
   {
-    path: "/perfil",
-    name: "perfil",
-    component: () => import("../components/perfil"),
+    path: "/key",
+    name: "key",
+    component: () => import("../components/key"),
   },
+  {
+    path: "/a",
+    name: "a",
+    component: () => import("../components/a"),
+  },
+ 
   {
     path: "/agregar",
     name: "agregar",

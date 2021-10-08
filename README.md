@@ -1,3 +1,5 @@
+
+
 # Veterinaria-migracionVUE
 Pasamos el proyecto a Vue y bootstrap
 # vue-mevn-stack-app
@@ -37,3 +39,7 @@ Start the mongodb server.
 Start node server on http://localhost:4000/api 
 nodemon
 
+npm install @vue/babel-preset-app -dev
+
+
+ 

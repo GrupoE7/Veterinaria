@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div id="app">
     <div id="nav">
     <nav class="navbar navbar-dark text-white bg-dark " aria-label="First navbar example ">
@@ -31,43 +32,15 @@
                              
                 </ul> 
         </ul>
+=======
+  <div id="material-kit">
+    <div :class="{ 'nav-open': NavbarStore.showNavbar }">
+      <router-view name="header" />
+      <div>
+        <router-view />
+>>>>>>> 81ac309cd5677125db055019abfcd17cb71efa7f
       </div>
+      <router-view name="footer" />
     </div>
-  </nav>
-
-  
-    </div>
-    <router-view/>
   </div>
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #435f58d2;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #51848d;
-  
-}
-
-#nav a.router-link-exact-active {
-  color: #7dc59e;
-}
-body {
-  padding-bottom: 20px;
-}
-
-.logo{
-  height: 50px;
-}
-</style>

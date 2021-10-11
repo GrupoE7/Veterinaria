@@ -64,6 +64,7 @@
 
 <script>
 import { LoginCard } from "@/components";
+import swal from 'sweetalert';
 
 export default {
   components: {
@@ -95,6 +96,7 @@ export default {
          .catch(e=>{
           console.log(e.response)
         })
+   swal("Hello world!")
    }
 
   },

@@ -2,38 +2,46 @@
 
 
 <center>
-<div class="bg-dark vh-100 d-flex justify-content-center align-items-center">
-  <tr v-for="(item, index) in Students" :key="index">
-    <div class="container d-flex justify-content-center">
-        <div class="card p-2">
+    <div class="h-v100 d-flex justify-content-center align-items-center">
+          <div class="md-layout">
+            <tr v-for="(item, index) in Students" :key="index">
+                <div class="container d-flex">
+                    <div class="card p-2">
+                    
+                        <div class="p-info px-3 py-3">
+                            <div>
+                                <h5 class="mb-0">{{ item.title }}</h5> <span> </span>
+                                
+                            </div>
+                            
+                            <div class="p-price d-flex flex-row"> <span> $ </span>
         
-            <div class="p-info px-3 py-3">
-                <div>
-                    <h5 class="mb-0">{{ item.title }}</h5> <span> </span>
+                                <h5>{{ item.precio }}</h5>
+                                <img src="../../public/favicon.png" alt="" width="30px" >
+                            </div>
+                            <div class="heart"> <i class="bx bx-heart"></i> </div>
+                        </div>
+                        <div class="text-center p-image"> 
+                        
+                        <img :src="item.path" > </div>
+                        <div class="p-about">
+                            <p>{{ item.description }}</p>
+                        </div>
+                        <div class="buttons d-flex flex-row gap-3 px-3"> <button class="btn btn-success w-80">Ver</button> <button class="btn btn-outline-success w-100">Comprar ahora</button> </div>
+                
+         
                 </div>
-                <div class="p-price d-flex flex-row"> <span>$</span>
-                    <h1>{{ item.precio }}</h1>
-                </div>
-                <div class="heart"> <i class="bx bx-heart"></i> </div>
             </div>
-            <div class="text-center p-image"> 
-              
-              <img :src="item.path"> </div>
-            <div class="p-about">
-                <p>{{ item.description }}</p>
-            </div>
-            <div class="buttons d-flex flex-row gap-3 px-3"> <button class="btn btn-danger w-100">Ver</button> <button class="btn btn-outline-danger w-100">Comprar ahora</button> </div>
+            </tr>
         </div>
     </div>
-    </tr>
-</div>
 </center>
 
 </template>
 
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 
  export default {
   
@@ -75,6 +83,7 @@ import axios from "axios";
 
 <style >
 .card {
+   
     width: 350px;
     border: none;
     height: 350px;
@@ -83,6 +92,7 @@ import axios from "axios";
     position: relative;
     overflow: hidden
 }
+
 
 .p-info {
     display: flex;
@@ -214,7 +224,7 @@ import axios from "axios";
 }
 
 .btn {
-    height: 50px;
+    height: 35px;
     font-size: 16px;
     width: 140px !important;
     font-weight: 600

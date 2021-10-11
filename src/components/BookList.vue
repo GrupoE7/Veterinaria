@@ -47,6 +47,7 @@ export default {
       .catch(e => {
         this.errors.push(e);
         if (e.response.status === 401) {
+          
           this.$router.push({
             name: "Login"
           });

@@ -29,6 +29,7 @@
     "vue-router": "^3.5.2"
   },
   "devDependencies": {
+    "node": "^16.10.0",
     "nodemon": "^2.0.13"
   }
 }

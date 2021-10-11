@@ -116,7 +116,7 @@ router.get('/images/:id', async (req,res,next)=>{
   const id = req.params.id;
      const imageDeleted = await Image.findByIdAndDelete(id);
    
-   await unlink(path.resolve(`./src/public/${imageDeleted.path}`))
+  //  await unlink(path.resolve(`../../public/${imageDeleted.path}`))
 
     res.redirect('/')
  })

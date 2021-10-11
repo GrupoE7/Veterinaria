@@ -1,55 +1,228 @@
 <template>
-    <div class="col-12 container">
-    <div class="alert bg-success mb-5 py-4" role="alert">
-        <div class="d-flex"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle">
-                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <div class="px-3">
-                <h5 class="alert-heading">Error usuario o contraseña!</h5>
-                <p>No tine Permisos para el ingreso, porfavor verifique o comuniquese con el administrador.</p>
-                <p>PetCar siempre a su servicio.</p> <a href="#" class="btn text-white" data-dismiss="alert" aria-label="Close" data-abc="true">Dismiss</a> <a href="#" class="btn btn-white mx-1" data-abc="true"> Continue <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg> </a>
-            </div>
+  <div class="wrapper">
+    <parallax class="section page-header header-filter" :style="headerStyle">
+      <div class="container">
+        <div class="md-layout">
+          <div
+            class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
+          >
+            <h1 class="title">Nuestras mascotas son kdkskjdnlskndlksndlk</h1>
+           
+            <br />
+            <md-button
+              href="https://www.youtube.com/watch?v=IRvn-is9xjo"
+              class="md-success md-lg"
+              target="_blank"
+              ><i class="fas fa-play"></i> Ver video</md-button
+            >
+          </div>
         </div>
+      </div>
+    </parallax>
+    <div class="main main-raised">
+      
+        
+          
+
+<!-- ////////////////////////////////////////////////////////////////////////////// -->
+<h1>error  clave</h1>
+<!-- /////////////////////////////////////////////////////////////////////////////////// -->
+<center>
+
+                 <md-button  slot="footer" class="btn btn-outline-success"  href="#/CreateComponent">
+                  Crear producto
+
+                </md-button > 
+                <br>
+                <br>
+                  <md-button  slot="footer" class="btn btn-outline-success"  href="#/crearusuario">
+                  Crear usuario
+
+                </md-button >
+</center>
+    
+     
+   
+      <div class="section section-contacts">
+        <div class="container">
+          <div class="md-layout">
+           
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
-
 <script>
-function r(){
-    location.href="http://localhost:8080/view#/login";
-}
-setTimeout(r(),10000);
+import axios from "axios";
+
+export default {
+    data() {
+    
+     return {
+       Students: [],
+     };
+   },
+
+   created(){
+    this.ver();
+
+   },
+ 
+   methods: {
+    ver(){
+
+         this.axios.get('ver')
+         .then(res => {
+           console.log(res.data)
+           this.Students=res.data;
+
+
+         })
+         .catch(e=>{
+          console.log(e.response)
+        })
+
+
+
+   },
+
+   deleteProducto(id){
+
+    //  this.axios.delete('/images/delete/${id}')
+     let apiURL = `http://localhost:3000/images/delete/${id}`;
+    this.axios.get(`http://localhost:3000/images/delete/${id}`)
+     let indexOfArrayItem = this.Students.findIndex((i) => i._id === id);
+
+      if (window.confirm("Do you really want to delete?")) {
+        
+        axios
+          .delete(apiURL)
+          .then(() => {
+            this.Students.splice(indexOfArrayItem, 1);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
+    
+    
+   }
+
+
+  },
+  bodyClass: "landing-page",
+  props: {
+    header: {
+      type: String,
+      default: require("../assets/img/examples/fondServicios.jpg")
+    },
+    teamImg1: {
+      type: String,
+      default: require("../assets/img/faces/Jennifer.jpeg")
+    },
+    teamImg2: {
+      type: String,
+      default: require("../assets/img/faces/Anderson.jpeg")
+    },
+    teamImg3: {
+      type: String,
+      default: require("../assets/img/faces/edward-garcia.jpg")
+    }
+  },
+ 
+  computed: {
+    headerStyle() {
+      return {
+        backgroundImage: `url(${this.header})`
+      };
+    }
+  }
+};
+//////////////////
+//////////////////////////////
+//////////////////////////
+
+
+
+/////////////////////////////////////////
 </script>
 
 
-<style scoped>
-.container {
-     margin-top: 100px
- }
 
- p {
-     color: #fff;
-     
-     font-size: 1.1em;
- }
 
- .alert-heading {
-     color: #fff
- }
 
- .bg-success {
-     background-color: #f0715f !important
- }
 
- .btn-white {
-     color: #5e676f;
-     background-color: #fff;
-     border-color: transparent;
-     box-shadow: 0 1px 2px rgba(0, 0, 0, .05)
- }
+<style lang="scss" scoped>
+.md-card-actions.text-center {
+  display: flex;
+  justify-content: center !important;
+}
+.contact-form {
+  margin-top: 30px;
+}
+
+.md-has-textarea + .md-layout {
+  margin-top: 15px;
+}
+.card-body{
+
+
+  margin-top: 50px;
+  height: 128px;
+  background: linear-gradient(-98dg,#BF819f ,#f28a57);
+}
+
+
+
+
+
+
+
+.btn-success {
+  margin-right: 10px;
+}     
+
+
+.external-link {
+    cursor: pointer;
+    color: blue
+}
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////@at-root
+.card-body{
+
+
+  margin-top: 50px;
+  height: 128px;
+  background: linear-gradient(-98dg,#BF819f ,#f28a57);
+}
+
+
+
+
+
+
+
+
+
+.title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 </style>
+
+
+

@@ -11,6 +11,7 @@ import MainFooter from "./layout/MainFooter.vue";
  import crearusuario from "./components/crearusuario.vue";
 
 import ListComponent from "./components/ListComponent.vue";
+import error_clave from "./components/error_clave.vue";
 
 
 
@@ -45,6 +46,16 @@ export default new Router({
   path: "/ListComponent",
   name: "ListComponent",  
   components: { default: ListComponent, header: MainNavbar, footer: MainFooter },
+  props: {
+    header: { colorOnScroll: 400 },
+    footer: { backgroundColor: "black" }
+  }
+},
+///////////////////////////////////////////////
+{
+  path: "/error_clave",
+  name: "error_clave",  
+  components: { default: error_clave, header: MainNavbar, footer: MainFooter },
   props: {
     header: { colorOnScroll: 400 },
     footer: { backgroundColor: "black" }

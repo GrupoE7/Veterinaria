@@ -33,6 +33,8 @@
             <th >nombre</th>
             <th>Descripcion</th>
             <th>Valor</th>
+            
+            <th>Dia/creaccion</th>
             <th>Imagen</th>
             <th>Actions</th>
           </tr>
@@ -42,6 +44,7 @@
             <td class="title" id="title">{{ item.title }}</td>
             <td class="description" id="description">{{ item.description }}</td>
             <td class="precio" id="precio">{{ item.precio }}</td>
+             <td class="precio" id="precio">{{ item.created_at }}</td>
              <img :src="item.path"   width="100px" alt="100px" height="100px"> 
             <!-- 8b477bb1-ff3a-45c5-ab9e-59ef6641496f.jpg -->
             

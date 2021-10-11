@@ -47,7 +47,7 @@
             <div
               class="md-layout-item md-size-33 md-medium-size-40 md-small-size-50 md-xsmall-size-70 mx-auto text-center"
             >
-            //////////////////////////////////////////////////////////////////////////
+            
             <form action="http://localhost:3000/autenticate" method="POST">
 
 
@@ -94,7 +94,7 @@
                 </md-button> 
             </login-card>
             </form>
-              /////////////////////////////////////////////////
+              
             </div>
           </div>
         </div>

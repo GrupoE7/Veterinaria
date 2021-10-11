@@ -3,7 +3,13 @@ const mongoose  = require('mongoose')
 
 
 mongoose.connect("mongodb+srv://GrupoE788:1024502097@cluster0.sotsw.mongodb.net/Cluster0?retryWrites=true&w=majority",{
-    useNewUrlParser: true ,
+   
+
+
+
+
+
+useNewUrlParser: true ,
     useUnifiedTopology: true
 
 }).then((db)=> { console.log('database connected success')

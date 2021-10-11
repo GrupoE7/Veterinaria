@@ -3,17 +3,18 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import MaterialKit from "./plugins/material-kit";
-import Axios from 'axios'
-import VueAxios from 'vue-axios'
+import axios from 'axios'
+import Vueaxios from 'vue-axios'
+
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 
 
-Vue.use(VueAxios ,Axios);
+Vue.use(Vueaxios ,axios);
 
-Axios.defaults.baseURL = 'http://localhost:3000/';
+axios.defaults.baseURL = 'http://localhost:3000/';
 
 Vue.config.productionTip = false;
 

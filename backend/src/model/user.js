@@ -30,11 +30,14 @@ const UserSchema = new mongoose.Schema({
 
  UserSchema.methods.isCorrectPasswoord = function(password,callback){
     bcrypt.compare(password, this.password, function (err,same){
+        
         if (err){
             callback(err);
+            
 
         }else{
             callback(err,same);
+            
         }
 
     });

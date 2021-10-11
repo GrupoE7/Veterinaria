@@ -55,12 +55,7 @@
                             <p>Potafolio</p>
                           </a>
                         </li>
-                        <li>
-                          <a href="#/New">
-                            <i class="material-icons">layers</i>
-                            <p>New</p>
-                          </a>
-                        </li>
+                        
                         <li>
                           <a
                             href="https://www.misiontic2022.gov.co/portal/"

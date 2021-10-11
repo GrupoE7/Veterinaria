@@ -1,72 +1,67 @@
 <template>
-  <div class="wrapper">
-    <parallax class="section page-header header-filter" :style="headerStyle">
+  <div class="wrapper ">
+    <parallax class="section page-header header-filter " :style="headerStyle">
       <div class="container">
         <div class="md-layout">
           <div
-            class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
+            class="md-layout-item md-size-33 md-small-size-66 md-xsmall-size-100 md-medium-size-40 mx-auto"
           >
-            <h1 class="title">Nuestras mascotas son kdkskjdnlskndlksndlk</h1>
-           
-            <br />
-            <md-button
-              href="https://www.youtube.com/watch?v=IRvn-is9xjo"
-              class="md-success md-lg"
-              target="_blank"
-              ><i class="fas fa-play"></i> Ver video</md-button
-            >
-          </div>
+        
+          
+        </div>
         </div>
       </div>
     </parallax>
     <div class="main main-raised">
       
         
+     
           
 
 <!-- ////////////////////////////////////////////////////////////////////////////// -->
-<center>
-<div class="conatiner mt-5" id="contiene">
-        <div class="row">
-            <div class="col-md-4 mx-auto">
-                <div class="card">
-                    <div class="card-header text-white bg-success" id="header">
-                     <h5 class="product" id="product">Crear Producto</h5>
-                    </div>
-                    <div class="card-body">
-                       
-                        <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
-                            <div class="input-group mb-3">
-                                    <div class="custom-file">
-                                        <input type="file" name="image" class="custom-file-input" id="inputGroupFile02">
-                                     <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">....</label>
+    <center>
+    <div class="conatiner mt-5" id="contiene">
+            <div class="row ">
+            
+                <div class="col-md-4 mx-auto">
+                    <div class="card">
+                        <div class="card-header text-white bg-success" id="header">
+                        <h4 class="product" id="product">Crear Producto</h4>
+                        </div>
+                        <div class="card-body ">
+                          
+                            <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+                                <div class="input-group mb-3">
+                                        <div class="custom-file">
+                                            <input type="file" name="image" class="custom-file-input" id="inputGroupFile02">
+                                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">....</label>
+                                        </div>
                                     </div>
+
+                                <div class="form-group">
+                                  <input type="text" name="title" class="form-control" placeholder="Nombre">
                                 </div>
 
-                            <div class="form-group">
-                              <input type="text" name="title" class="form-control" placeholder="Nombre">
-                            </div>
 
+                                <div class="form-group">
+                                    <textarea name="description" class="form-control" rows="2" placeholder="description"></textarea>
+                                </div>
 
-                            <div class="form-group">
-                                <textarea name="description" class="form-control" rows="2" placeholder="description"></textarea>
-                            </div>
+                                <div class="form-group">
+                                    <textarea name="precio" class="form-control" rows="2" placeholder="precio"></textarea>
+                                </div>
 
-                            <div class="form-group">
-                                <textarea name="precio" class="form-control" rows="2" placeholder="precio"></textarea>
-                            </div>
+                                <button type="submit"  >Subir</button>
+                                <br>
+                                <br>
+                                <br>
+                          </form>
 
-                            <button type="submit"  >Subir</button>
-                            <br>
-                            <br>
-                            <br>
-                       </form>
-
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </center>
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -99,6 +94,23 @@ export default {
        Students: [],
      };
    },
+   bodyClass: "login-page",
+  
+  props: {
+    header: {
+      type: String,
+      default: require("../assets/img/examples/tienda2.jpg")
+    }
+  },
+  
+ 
+  computed: {
+    headerStyle() {
+      return {
+        backgroundImage: `url(${this.header})`
+      };
+    }
+  },
 
    created(){
     this.ver();
@@ -147,33 +159,7 @@ export default {
 
 
   },
-  bodyClass: "landing-page",
-  props: {
-    header: {
-      type: String,
-      default: require("../assets/img/examples/fondServicios.jpg")
-    },
-    teamImg1: {
-      type: String,
-      default: require("../assets/img/faces/Jennifer.jpeg")
-    },
-    teamImg2: {
-      type: String,
-      default: require("../assets/img/faces/Anderson.jpeg")
-    },
-    teamImg3: {
-      type: String,
-      default: require("../assets/img/faces/edward-garcia.jpg")
-    }
-  },
- 
-  computed: {
-    headerStyle() {
-      return {
-        backgroundImage: `url(${this.header})`
-      };
-    }
-  }
+  
 };
 //////////////////
 //////////////////////////////

@@ -24,62 +24,17 @@
               </div> 
             </div>
           </div>
-          <div class="description text-center">
-            <p>
-              An artist of considerable range, Chet Faker — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure.
+          <div class= "description text-center" >
+           <p class="fs-4"> 
+              Puedes asegurar una vida tranquila y feliz para tu mascota con los accesorios y elementos de entrenamiento que tenemos para él. Conoce las mejores marcas y novedades disponibles
+              
             </p>
+            
           </div>
                 
           <div class="profile-tabs">
-            <tabs
-              :tab-name="['Studio', 'Work', 'Favorite']"
-              :tab-icon="['camera', 'palette', 'favorite']"
-              plain
-              nav-pills-icons
-              color-button="success"
-            >
-                        here you can add your content for tab-content 
-              <template slot="tab-pane-1">
-                <div class="md-layout">
-                  <div class="md-layout-item md-size-25 ml-auto">
-                    <img :src="tabPane1[0].image" class="rounded" />
-                    <img :src="tabPane1[1].image" class="rounded" />
-                  </div>
-                  <div class="md-layout-item md-size-25 mr-auto">
-                    <img :src="tabPane1[3].image" class="rounded" />
-                    <img :src="tabPane1[2].image" class="rounded" />
-                  </div>
-                </div>
-              </template>
-              <template slot="tab-pane-2">
-                <div class="md-layout">
-                  <div class="md-layout-item md-size-25 ml-auto">
-                    <img :src="tabPane2[0].image" class="rounded" />
-                    <img :src="tabPane2[1].image" class="rounded" />
-                    <img :src="tabPane2[2].image" class="rounded" />
-                  </div>
-                  <div class="md-layout-item md-size-25 mr-auto">
-                    <img :src="tabPane2[3].image" class="rounded" />
-                    <img :src="tabPane2[4].image" class="rounded" />
-                  </div>
-                </div>
-              </template>
-              <template slot="tab-pane-3">
-                <div class="md-layout">
-                  <div class="md-layout-item md-size-25 ml-auto">
-                    <img :src="tabPane3[0].image" class="rounded" />
-                    <img :src="tabPane3[1].image" class="rounded" />
-                  </div>
-                  <div class="md-layout-item md-size-25 mr-auto">
-                    <img :src="tabPane3[2].image" class="rounded" />
-                    <img :src="tabPane3[3].image" class="rounded" />
-                    <img :src="tabPane3[4].image" class="rounded" />
-                  </div>
-                </div>
-              </template>
+            <tabs>
+             
             </tabs>
           </div>
         </div>
@@ -95,60 +50,8 @@ export default {
   components: {
     Tabs
   },
-  bodyClass: "profile-page",
-  data() {
-    
-    return {
-      
-       Students: [],
-      
-    
-      
-      tabPane1: [
-        { image: require("@/assets/img/examples/studio-1.jpg") },
-        { image: require("@/assets/img/examples/studio-2.jpg") },
-        { image: require("@/assets/img/examples/studio-4.jpg") },
-        { image: require("@/assets/img/examples/studio-5.jpg") },
-        
-      ],
-      tabPane2: [
-        { image: require("@/assets/img/examples/olu-eletu.jpg") },
-        { image: require("@/assets/img/examples/clem-onojeghuo.jpg") },
-        { image: require("@/assets/img/examples/cynthia-del-rio.jpg") },
-        { image: require("@/assets/img/examples/mariya-georgieva.jpg") },
-        { image: require("@/assets/img/examples/clem-onojegaw.jpg") }
-      ],
-      tabPane3: [
-        { image: require("@/assets/img/examples/mariya-georgieva.jpg") },
-        { image: require("@/assets/img/examples/studio-3.jpg") },
-        { image: require("@/assets/img/examples/clem-onojeghuo.jpg") },
-        { image: require("@/assets/img/examples/olu-eletu.jpg") },
-        { image: require("@/assets/img/examples/studio-1.jpg") }
-      ]
-    
-    };
+  // bodyClass: "profile-page",
   
-  },
-  created(){
-    this.ver();
-
-   },
- 
-  methods: {
-    ver(){
-
-         this.axios.get('ver')
-         .then(res => {
-           console.log(res.data)
-           this.Students=res.data;
-
-
-         })
-         .catch(e=>{
-          console.log(e.response)
-        })
-   }
-   },
   props: {
     header: {
       type: String,
@@ -174,18 +77,5 @@ export default {
   padding: 0;
 }
  
-.profile-tabs::v-deep {
-  .md-card-tabs .md-list {
-    justify-content: center;
-  }
 
-  [class*="tab-pane-"] {
-    margin-top: 3.213rem;
-    padding-bottom: 50px;
-
-    img {
-      margin-bottom: 2.142rem;
-    }
-  }
-}
 </style>

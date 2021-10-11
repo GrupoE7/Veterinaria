@@ -1,23 +1,7 @@
 <template>
   <div class="wrapper">
     <parallax class="section page-header header-filter" :style="headerStyle">
-      <div class="container">
-        <div class="md-layout">
-          <div
-            class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
-          >
-            <h1 class="title">Nuestras mascotas son kdkskjdnlskndlksndlk</h1>
-           
-            <br />
-            <md-button
-              href="https://www.youtube.com/watch?v=IRvn-is9xjo"
-              class="md-success md-lg"
-              target="_blank"
-              ><i class="fas fa-play"></i> Ver video</md-button
-            >
-          </div>
-        </div>
-      </div>
+      
     </parallax>
     <div class="main main-raised">
       
@@ -39,7 +23,7 @@
         </thead>
         <tbody>
            <tr v-for="(item, index) in Students" :key="index">
-            <td class="title" id="title">{{ item.title }}</td>
+            <h5><td class="title" id="title">{{ item.title }}</td></h5>
             <td class="description" id="description">{{ item.description }}</td>
             <td class="precio" id="precio">{{ item.precio }}</td>
              <img :src="item.path"   width="100px" alt="100px" height="100px"> 
@@ -56,7 +40,7 @@
               </router-link> -->
               
               <button
-              class="btn btn-outline-warning"
+              class="btn btn-outline-danger"
                value="Reload Page" onclick="history.go(0)"
                 @click.prevent="deleteProducto(item._id)"
                 
@@ -70,19 +54,22 @@
     </div>
   </div>
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
-<center>
+  <center>
 
-                 <md-button  slot="footer" class="btn btn-outline-success"  href="#/CreateComponent">
-                  Crear producto
+    <login-card header-color="green">
+        <md-button slot="footer" class="form-group mb-4 md-success md-lg"  href="#/CreateComponent">
+          <h3> Crear producto</h3>
 
-                </md-button > 
-                <br>
-                <br>
-                  <md-button  slot="footer" class="btn btn-outline-success"  href="#/crearusuario">
-                  Crear usuario
+        </md-button > 
+        <br>
+        <br>
+          <md-button slot="footer" class=" btn-warning"  href="#/crearusuario">
+          <h5>Crear usuario Admin</h5> 
 
-                </md-button >
-</center>
+        </md-button >
+        
+    </login-card>
+  </center>
     
      
    

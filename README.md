@@ -11,11 +11,6 @@ Git clone https://github.com/SinghDigamber/vue-mevn-stack-app.git
 Install the required packages:
 ###   npm install
 
-Get inside the project
-#cd vue-mevn-stack-app
-
-
-
 Start the vue app on http://localhost:8080
 
 #### npm run serve ##
@@ -25,13 +20,10 @@ cd backend = BACKEND
 
 ###   npm install ###
 
-Start the mongodb server.
-
-### npx nodemon run server  ###
+#### npm run rev ##
 
 
-Start node server on http://localhost:4000/api 
-nodemon
+
 
 npm install @vue/babel-preset-app -dev
 

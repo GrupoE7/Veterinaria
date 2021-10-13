@@ -37,6 +37,7 @@ app.post('/register', function(req,res) {
     });
     
     app.post('/autenticate', function(req,res) {
+       
         const {username , password } = req.body;
     
         User.findOne({username},(err,user)=>{

@@ -27,7 +27,8 @@
                         <div class="p-about">
                             <p>{{ item.description }}</p>
                         </div>
-                        <div class="buttons d-flex flex-row gap-3 px-3"> <button class="btn btn-success w-80">Ver</button> <button class="btn btn-outline-success w-100">Comprar ahora</button> </div>
+                        <div class="buttons d-flex flex-row gap-3 px-3"> 
+                         <button class="btn btn-outline-success w-100">Comprar ahora</button> </div>
                 
          
                 </div>

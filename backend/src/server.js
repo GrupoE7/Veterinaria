@@ -44,20 +44,26 @@ app.post('/register', function(req,res) {
                 res.status(500).send('error a validar usuario ');
             }
             else if(!user){
-                res.status(500).send('usuario no existe ');
+                // res.status(500).send('usuario no existe ');
+                return ('"usuario no existe"');
                 
             }else{
                 user.isCorrectPasswoord(password,(err,result)=>{
                     if (err){
-                        res.status(500).send('error al autenticar ');
+                         res.status(500).send('error al autenticar ');
+                        
+                       
                     }else if(result){
                         // res.status(200).send('usuario autenticado correctamenet ');
-                        res.redirect('http://localhost:8080/view#/ListComponent');
+                         res.redirect('http://localhost:8080/view#/ListComponent');
+                        
+                       
     
                     }else{
-                        // res.status(500).send('usuario y o contraseña incorrecta ');
+                        //res.status(500).send('usuario y o contraseña incorrecta ');
+                        
 
-                        res.redirect('http://localhost:8080/view#/');
+                        res.redirect('http://localhost:8080/view#/error_clave');
                         
                     }
     

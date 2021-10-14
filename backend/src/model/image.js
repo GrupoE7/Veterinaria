@@ -5,7 +5,7 @@ const ImageSchema = new Schema({
 
     title:{type:String},
     description:{type:String},
-    precio:{type:String},
+    precio:{type:Number},
     filename:{type:String},
     originalname:{type:String},
     path:{type:String},

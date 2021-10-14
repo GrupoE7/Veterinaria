@@ -6,7 +6,7 @@
           <div
             class="md-layout-item md-size-50 md-small-size-70 md-xsmall-size-100"
           >
-            <h1 class="title">Nuestras mascotas son kdkskjdnlskndlksndlk</h1>
+            <h1 class="title">Nuestras mascotas </h1>
            
             <br />
             <md-button
@@ -25,20 +25,13 @@
           
 
 <!-- ////////////////////////////////////////////////////////////////////////////// -->
-<h1>error  clave</h1>
+<div class="alert alert-danger">
+  <strong>Clave incorrecta!</strong> Clave y/o usuario incorrectos verifique e intente de nuevo.
+</div>
 <!-- /////////////////////////////////////////////////////////////////////////////////// -->
 <center>
 
-                 <md-button  slot="footer" class="btn btn-outline-success"  href="#/CreateComponent">
-                  Crear producto
-
-                </md-button > 
-                <br>
-                <br>
-                  <md-button  slot="footer" class="btn btn-outline-success"  href="#/crearusuario">
-                  Crear usuario
-
-                </md-button >
+                 
 </center>
     
      
@@ -55,63 +48,18 @@
 </template>
 
 <script>
-import axios from "axios";
+
+// setTimeout ( function(){
+//   location.href ="http://localhost:8080/view#/login";
+
+// }, 1000 *5);
 
 export default {
-    data() {
     
-     return {
-       Students: [],
-     };
-   },
 
-   created(){
-    this.ver();
-
-   },
+  
  
-   methods: {
-    ver(){
-
-         this.axios.get('ver')
-         .then(res => {
-           console.log(res.data)
-           this.Students=res.data;
-
-
-         })
-         .catch(e=>{
-          console.log(e.response)
-        })
-
-
-
-   },
-
-   deleteProducto(id){
-
-    //  this.axios.delete('/images/delete/${id}')
-     let apiURL = `http://localhost:3000/images/delete/${id}`;
-    this.axios.get(`http://localhost:3000/images/delete/${id}`)
-     let indexOfArrayItem = this.Students.findIndex((i) => i._id === id);
-
-      if (window.confirm("Do you really want to delete?")) {
-        
-        axios
-          .delete(apiURL)
-          .then(() => {
-            this.Students.splice(indexOfArrayItem, 1);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      }
-    
-    
-   }
-
-
-  },
+ 
   bodyClass: "landing-page",
   props: {
     header: {

@@ -7,6 +7,16 @@ const uuid   =    require('uuid/v4')
 const {format} = require('timeago.js')
 const studentAPI = require("./routes/index");
 const cors = require("cors");
+
+
+app.use((req, res, next)=>{
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, ContentType, Accept");
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+   });
+   
 //////////////////////////////
 ///////login/////////
 const bodyParser  = require('body-parser');

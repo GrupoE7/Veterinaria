@@ -25,7 +25,7 @@
                         class="rounded"
                       />
              
-                <h3  class="title display-one">Estudio identifica siete rasgos de personalidad de los gatos</h3>
+                <h3  class="title display-one">Los errores más comunes que cometen los dueños de perros</h3>
               
               
               <ul class="list-icon">
@@ -35,13 +35,13 @@
                     >
                     
                       <polyline points="20 6 9 17 4 12"></polyline>
-                  <h4>  Estudio identifica siete rasgos de personalidad de los gatos. Para los amantes de los gatos: ¿se han preguntado cuántas veces en el día cambian de humor? ¿Por qué tan constante? ¿Es normal? Estos animales especiales se han convertido en grandes acompañantes y en un común denominador en varios hogares durante la pandemia..</h4>
+                  <h4> Para muchos no existe una mejor mascota que un perro. Son fieles, leales, cariñosos, animados y sin duda una buena compañía. Sin embargo, como ocurre con cualquier animal de compañía, se requieren ciertos cuidados.</h4>
                      
                   </span>
                 </li>
                 
               </ul>
-                  <a href="https://www.eltiempo.com/vida/mascotas/gatos-y-rasgos-caracteristicos-de-su-personalidad-617307" class="link"><strong>Ir al sitio</strong></a> 
+                  <a href="https://www.eltiempo.com/vida/mascotas/perros-si-tienes-una-mascota-evita-hacer-esto-619707" class="link"><strong>Ir al sitio</strong></a> 
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
                       />
             
               
-                <h3 class="title display-one">Recomendaciones para cuidar el pelo de sus mascotas</h3>
+                <h3 class="title display-one">Estudio identifica siete rasgos de personalidad de los gatos </h3>
               
               <ul class="list-icon">
                 
@@ -77,12 +77,13 @@
                     >
                       <polyline points="20 6 9 17 4 12"></polyline></svg
                   ></span>
-                    <h4> Recomendaciones para cuidar el pelo de sus mascotas. Sin importar cuál sea el tipo de manto o pelaje que tenga su perro, es importante saber cuidarlo adecuadamente. Un pelo sano y saludable es sinónimo de responsabilidad, buenos cuidados y alimentación apropiada, así como de vitalidad, energía y belleza. Mantenerlo en buenas condiciones obedece más que a razones estéticas, también tiene que ver con higiene, bienestar y buena calidad de vida.</h4>
+                  <h4>  Estudio identifica siete rasgos de personalidad de los gatos. Para los amantes de los gatos: ¿se han preguntado cuántas veces en el día cambian de humor? ¿Por qué tan constante? ¿Es normal? Estos animales especiales se han convertido en grandes acompañantes y en un común denominador en varios hogares durante la pandemia..</h4>
+                    
                 </li>
                 
               </ul>
               <div class="button-group mt--40 mt_sm--20">
-                  <a href="https://www.eltiempo.com/vida/mascotas/recomendaciones-para-cuidar-el-pelo-de-sus-mascotas-603028" class="link"><strong>Ir al sitio</strong></a>
+                  <a href="https://www.eltiempo.com/vida/mascotas/gatos-y-rasgos-caracteristicos-de-su-personalidad-617307" class="link"><strong>Ir al sitio</strong></a>
                   <i class="icon">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>
@@ -105,7 +106,7 @@
                         alt="Thumbnail Image"
                         class="rounded"
                       />
-              <h3 class="title display-one">Los errores más comunes que cometen los dueños de perros.</h3>
+              <h3 class="title display-one">Recomendaciones para cuidar el pelo de sus mascotas .</h3>
                 
               
               <ul class="list-icon">
@@ -115,10 +116,11 @@
                     >
                       <polyline points="20 6 9 17 4 12"></polyline>
                   </span>
-                 <h4> Para muchos no existe una mejor mascota que un perro. Son fieles, leales, cariñosos, animados y sin duda una buena compañía. Sin embargo, como ocurre con cualquier animal de compañía, se requieren ciertos cuidados.</h4>
+                  <h4> Recomendaciones para cuidar el pelo de sus mascotas. Sin importar cuál sea el tipo de manto o pelaje que tenga su perro, es importante saber cuidarlo adecuadamente. Un pelo sano y saludable es sinónimo de responsabilidad, buenos cuidados y alimentación apropiada, así como de vitalidad, energía y belleza. Mantenerlo en buenas condiciones obedece más que a razones estéticas, también tiene que ver con higiene, bienestar y buena calidad de vida.</h4>
+                 
                 </li>
                 <div class="button-group mt--40 mt_sm--20">
-                <a href="https://www.eltiempo.com/vida/mascotas/perros-si-tienes-una-mascota-evita-hacer-esto-619707" class="link"><strong>Ir al sitio</strong></a>
+                <a href="https://www.eltiempo.com/vida/mascotas/recomendaciones-para-cuidar-el-pelo-de-sus-mascotas-603028" class="link"><strong>Ir al sitio</strong></a>
                   <i class="icon">
                       <line x1="5" y1="12" x2="19" y2="12"></line>
                       <polyline points="12 5 19 12 12 19"></polyline>

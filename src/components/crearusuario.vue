@@ -51,8 +51,9 @@
               </md-field>
               <md-button slot="footer" class="md-simple md-success md-lg"  type="submit"
               >
-                  Get Started
+                  Crear usuario
                 </md-button> 
+                
             </login-card>
             </form>
           </div>
@@ -64,7 +65,7 @@
 
 <script>
 import { LoginCard } from "@/components";
-import swal from 'sweetalert';
+
 
 export default {
   components: {
@@ -96,7 +97,7 @@ export default {
          .catch(e=>{
           console.log(e.response)
         })
-   swal("Hello world!")
+  
    }
 
   },

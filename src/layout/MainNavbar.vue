@@ -52,7 +52,7 @@
                         <li>
                           <a href="#/Profile">
                             <i class="material-icons">layers</i>
-                            <p>Potafolio</p>
+                            <p>Portafolio</p>
                           </a>
                         </li>
                         

@@ -15,12 +15,6 @@ res.render('index', {data:image});
   //res.json(Image);
     
   })
-
-
-
- 
-
-
  router.get('/', async (req,res,next)=>{
 
     const image = await Image.find()

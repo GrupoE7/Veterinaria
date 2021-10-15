@@ -7,8 +7,10 @@
     "node": "^16.10.0"
   },
   "scripts": {
-    "start": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/server.js"
+ 
+    "start": "babel-node serve.js --exec",
+    "dev": "nodemon src/server.js",
+    "devbabel":"nodemon serve.js --exec babel-node"
     
   },
   "keywords": [],

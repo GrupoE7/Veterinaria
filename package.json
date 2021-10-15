@@ -3,13 +3,19 @@
   "author": "Creative Tim https://www.creative-tim.com/",
   "description": "Vue Material Kit",
   "version": "1.2.2",
+  "engines":{
+    "node": "^16.10.0"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build && gulp licenses",
     "lint": "vue-cli-service lint",
     "dev": "npm run serve",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev",
+    "start": "babel-node serve.js --exec",
+    
+    "devbabel":"nodemon serve.js --exec babel-node"
   },
   "dependencies": {
     "@vue/babel-preset-app": "^4.5.13",

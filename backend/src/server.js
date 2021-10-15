@@ -29,7 +29,9 @@ app.post('/register', function(req,res) {
             res.status(500).send('error al ingresar usuario ');
         }
         else{
-            res.status(200).send('usuario registrado');
+            //res.status(200).send('usuario registrado');
+            res.redirect('http://localhost:8080/view#/ListComponent');
+
         }
     });
     

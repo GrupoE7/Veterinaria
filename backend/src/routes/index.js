@@ -11,7 +11,8 @@ const Image = require('../model/image.js')
 
     const image = await Image.find()
     console.log(image)
-res.render('index', {data:image});
+    //res.render('Home', {data:image});
+    res.render("index",{data:image});
   //res.json(Image);
     
   })
@@ -132,7 +133,6 @@ router.get('/images/:id', async (req,res,next)=>{
 //     }
 //   });
 // });
-
 
 
 

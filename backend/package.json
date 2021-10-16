@@ -1,11 +1,12 @@
 {
-  "name": "Nodejs-Finteres",
+  "name": "veterinaria",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon src/server.js",
-    "dev": "nodemon src/server.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +30,7 @@
     "uuid": "^3.3.3",
     "vue-router": "^3.5.2"
   },
-  "devDependencies": {
+  "engines": {
     "node": "^16.10.0",
     "nodemon": "^2.0.13"
   }

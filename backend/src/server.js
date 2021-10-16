@@ -8,6 +8,7 @@ const {format} = require('timeago.js')
 const studentAPI = require("./routes/index");
 const cors = require("cors");
 //////////////////////////////
+
 ///////login/////////
 const bodyParser  = require('body-parser');
 const bcrypt = require ('bcrypt');
@@ -82,11 +83,15 @@ app.post('/register', function(req,res) {
 
 
 //setting
-app.set('port', process.env.PORT || 3000)
+//app.set('port', process.env.PORT || 3000)
+//*app.set('views', path.join(__dirname, '/views', "home.vue"))
+//*app.set('view engine', 'vue');
+//app.set('view engine', 'ejs')
+// res.sendFile(path.join(__dirname, '/views', 'home.vue')
+
+app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'))
-app.set('view engine', 'ejs')
-
-
+//app.engine('.vue', require('ejs').renderFile);
 
 //mongoose conection
  require('./database.js')
@@ -99,6 +104,10 @@ app.use(express.json())
 app.use(cors());
 
 
+
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening");
+  });
 
 app.use((req, res , next)=> {
     app.locals.format = format;
@@ -130,6 +139,5 @@ app.use("/api", studentAPI);
 app.use(express.static(path.join(__dirname,'./public')))
 
 
-app.listen(app.get('port'), ()=> {
-    console.log('port on server', app.get('port'))
-})
+
+
